@@ -1,0 +1,186 @@
+
+/*PROJECTS
+******************************************/
+
+.img-quality{
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+.img-quality img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.projects-box{
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	float: right;
+	padding: 100px 0;
+}
+
+.single-p{
+	flex-basis: 48%;
+	text-align: center;
+	margin-bottom: 30px;
+	position: relative;
+	border-radius: 10px;
+}
+
+.single-p img{
+	width: 100%;
+	border-radius: 10px;
+}
+
+.overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), #0984e3);
+	opacity: 0;
+	transition: 1s;
+	border-radius: 10px;
+}
+
+.single-p:hover .overlay{
+	opacity: 1;
+}
+
+
+.box-text{
+	width: 88%;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: 1s;
+
+}
+
+hr{
+	width: 60%;
+	height: 2px;
+	background-color: white;
+	border: 0;
+	margin: 10px auto;
+}
+
+.single-p:hover .box-text{
+	opacity: 1;
+	bottom: 21%;
+}
+
+
+.box-text h1{
+	color: white;
+	font-size: 21px;
+}
+
+
+.box-text p{
+	color: white;
+	font-size: 15px;
+}
+
+
+
+
+
+
+/*MEDIA QUERIES
+******************************************/
+
+@media screen and (max-width: 1024px){
+		.projects-box{
+			width: 80%;
+			margin: auto;
+			float: none;
+		}
+
+		.single-p{
+			flex-basis: 70%;
+			margin-bottom: 40px;
+		}
+
+		.single-p:hover .box-text{
+			bottom: 30%;
+		}
+
+		.box-text{
+			width: 78%;
+		}
+
+		.img-quality{
+			float: none;
+			width: 200px;
+			height: 200px;
+			margin-top: 100px;
+			margin-right: auto;
+			margin-left: auto;
+}
+
+}
+
+
+
+@media screen and (max-width: 768px){
+		.box-text h1{
+			font-size: 21px;
+	}
+
+		.box-text p{
+			font-size: 16px;
+	}
+
+		.single-p:hover .box-text{
+			bottom: 17%;
+	}
+
+		.img-quality{
+	
+			width: 150px;
+			height: 150px;
+	}
+
+}
+
+
+
+@media screen and (max-width: 500px){
+		.box-text h1{
+			font-size: 12px;
+	}
+
+		.box-text p{
+			font-size: 10px;
+	}
+
+	.box-text{
+			width: 88%;
+	}
+
+		hr{
+		margin: 10px auto;
+	}
+
+	.single-p{
+			flex-basis: 80%;
+		}
+
+	.single-p:hover .box-text{
+			bottom: 25%;
+	}
+
+}
+
+
+
