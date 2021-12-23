@@ -167,3 +167,11 @@
 	width: 100%;
 }
 }
+
+
+
+@media screen and (max-width: 375px){
+	.github a, .gmail a, .linkedin a{
+			font-size: 8px;
+		}
+}

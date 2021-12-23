@@ -184,3 +184,16 @@ hr{
 
 
 
+@media screen and (max-width: 375px){
+	.single-p:hover .box-text{
+			bottom: 15%;
+	}
+
+	.single-p{
+			flex-basis: 85%;
+		}
+
+	hr{
+		margin: 6px auto;
+	}
+}
