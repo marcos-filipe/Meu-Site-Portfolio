@@ -93,7 +93,9 @@ hr{
 
 
 
-
+hr.line{
+	display: none;
+}
 
 
 /*MEDIA QUERIES
@@ -108,7 +110,8 @@ hr{
 
 		.single-p{
 			flex-basis: 70%;
-			margin-bottom: 40px;
+			margin-bottom: 20px;
+			margin-top: 20px;
 		}
 
 		.single-p:hover .box-text{
@@ -127,6 +130,13 @@ hr{
 			margin-right: auto;
 			margin-left: auto;
 }
+
+		hr.line{
+			width: 100%;
+			height: 2px;
+			background-color: rgba(255, 255, 255, 0.3);
+			display: block;
+		}
 
 }
 
